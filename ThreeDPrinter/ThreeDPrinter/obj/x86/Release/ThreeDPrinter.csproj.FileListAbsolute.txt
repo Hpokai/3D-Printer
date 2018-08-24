@@ -1,0 +1,16 @@
+D:\Jabil\00__Project\_CHA\12-Arduino\HMI\ThreeDPrinter(20161011)\ThreeDPrinter\obj\x86\Release\ThreeDPrinter.Form1.resources
+D:\Jabil\00__Project\_CHA\12-Arduino\HMI\ThreeDPrinter(20161011)\ThreeDPrinter\obj\x86\Release\ThreeDPrinter.HomeDlg.resources
+D:\Jabil\00__Project\_CHA\12-Arduino\HMI\ThreeDPrinter(20161011)\ThreeDPrinter\obj\x86\Release\ThreeDPrinter.Link.resources
+D:\Jabil\00__Project\_CHA\12-Arduino\HMI\ThreeDPrinter(20161011)\ThreeDPrinter\obj\x86\Release\ThreeDPrinter.Preference.resources
+D:\Jabil\00__Project\_CHA\12-Arduino\HMI\ThreeDPrinter(20161011)\ThreeDPrinter\obj\x86\Release\ThreeDPrinter.Properties.Resources.resources
+D:\Jabil\00__Project\_CHA\12-Arduino\HMI\ThreeDPrinter(20161011)\ThreeDPrinter\obj\x86\Release\ThreeDPrinter.ZCaliProcessDlg1.resources
+D:\Jabil\00__Project\_CHA\12-Arduino\HMI\ThreeDPrinter(20161011)\ThreeDPrinter\obj\x86\Release\ThreeDPrinter.ZCaliProcessDlg2.resources
+D:\Jabil\00__Project\_CHA\12-Arduino\HMI\ThreeDPrinter(20161011)\ThreeDPrinter\obj\x86\Release\ThreeDPrinter.csproj.GenerateResource.Cache
+D:\Jabil\00__Project\_CHA\12-Arduino\HMI\ThreeDPrinter(20161026)\ThreeDPrinter\obj\x86\Release\ThreeDPrinter.Form1.resources
+D:\Jabil\00__Project\_CHA\12-Arduino\HMI\ThreeDPrinter(20161026)\ThreeDPrinter\obj\x86\Release\ThreeDPrinter.HomeDlg.resources
+D:\Jabil\00__Project\_CHA\12-Arduino\HMI\ThreeDPrinter(20161026)\ThreeDPrinter\obj\x86\Release\ThreeDPrinter.Link.resources
+D:\Jabil\00__Project\_CHA\12-Arduino\HMI\ThreeDPrinter(20161026)\ThreeDPrinter\obj\x86\Release\ThreeDPrinter.Preference.resources
+D:\Jabil\00__Project\_CHA\12-Arduino\HMI\ThreeDPrinter(20161026)\ThreeDPrinter\obj\x86\Release\ThreeDPrinter.Properties.Resources.resources
+D:\Jabil\00__Project\_CHA\12-Arduino\HMI\ThreeDPrinter(20161026)\ThreeDPrinter\obj\x86\Release\ThreeDPrinter.ZCaliProcessDlg1.resources
+D:\Jabil\00__Project\_CHA\12-Arduino\HMI\ThreeDPrinter(20161026)\ThreeDPrinter\obj\x86\Release\ThreeDPrinter.ZCaliProcessDlg2.resources
+D:\Jabil\00__Project\_CHA\12-Arduino\HMI\ThreeDPrinter(20161026)\ThreeDPrinter\obj\x86\Release\ThreeDPrinter.csproj.GenerateResource.Cache

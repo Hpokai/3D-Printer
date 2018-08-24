@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2BD25A32-94DA-43B9-9EBC-29AAA574C8BD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ThreeDPrinter</RootNamespace>
+    <AssemblyName>ThreeDPrinter</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>發行\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>PowerPoint.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="cSPC, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\cSPC.dll</HintPath>
+    </Reference>
+    <Reference Include="csSPC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\csSPC.dll</HintPath>
+    </Reference>
+    <Reference Include="Cypress, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Test\TestDisplay\TestDisplay\bin\Debug\Cypress.dll</HintPath>
+    </Reference>
+    <Reference Include="Ddp343x, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Test\TestDisplay\TestDisplay\bin\Debug\Ddp343x.dll</HintPath>
+    </Reference>
+    <Reference Include="Svg, Version=0.5.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Svg.2.2.1\lib\net35\Svg.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomeDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeDlg.Designer.cs">
+      <DependentUpon>HomeDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Link.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Link.Designer.cs">
+      <DependentUpon>Link.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Preference.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Preference.Designer.cs">
+      <DependentUpon>Preference.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ShareMemory.cs" />
+    <Compile Include="SVGParser.cs" />
+    <Compile Include="SysHook.cs" />
+    <Compile Include="ThreadRoutineRW.cs" />
+    <Compile Include="ZCaliProcessDlg1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZCaliProcessDlg1.Designer.cs">
+      <DependentUpon>ZCaliProcessDlg1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZCaliProcessDlg2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZCaliProcessDlg2.Designer.cs">
+      <DependentUpon>ZCaliProcessDlg2.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeDlg.resx">
+      <DependentUpon>HomeDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Link.resx">
+      <DependentUpon>Link.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Preference.resx">
+      <DependentUpon>Preference.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ZCaliProcessDlg1.resx">
+      <DependentUpon>ZCaliProcessDlg1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZCaliProcessDlg2.resx">
+      <DependentUpon>ZCaliProcessDlg2.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\up.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\down.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\A.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\M.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HomeBtn.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\home.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\up.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\down.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\Z_cali.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\Z_cali.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\ZCali.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\Preference.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\Preference.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\linking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\up1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\down1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\folder_open.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\projector.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\Projector2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\projector1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\RUN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\1475672093_RUN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\play.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\play1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\play2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\home1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\home2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\home3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\home5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\top_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\bottom_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\left_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\right_256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\ScaleUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\zoom-in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\zoom_in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\zoom_svg_in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\zoom_svg_out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\auto_arduino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\JGP-2012.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icon\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PowerPoint.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
